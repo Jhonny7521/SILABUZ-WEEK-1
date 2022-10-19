@@ -9,25 +9,15 @@ el número de ocurrencias. Por ejemplo, si el usuario ingresa 4,4,8,4,9,7,7, la 
 debe ser [4,8,9,7] y el segundo [3,1,1,2] 
 """
 
-""" *
+"""
 Ejercicio 3: Dada la matriz, [[1,2,3],[4,5,6],[7,8,9]], calcule el promedio de la diagonal principal. Hint: Los 3 elementos de la diagonal son 1,5,9
 """
 
-""" *
+"""
 Ejercicio 4: Dada la siguiente lista ["Hola", "Amigos", "Hoy", True] , escriba un programa que pida al usuario una palabra, dicha palabra debe ser agregada al final y al inicio de la lista.
 """
-def add_word(_list, text):
-  _list.insert(0, text)
-  _list.append(text)
-  return _list
 
-_list = ["Hola", "Amigos", "Hoy", True]
-
-text_input = input("Ingrese una palabra: ")
-
-print(add_word(_list, text_input))
-
-""" *
+"""
 Ejercicio 4
 Dada una lista de números enteros [15,20,50,80,40,60], escriba un programa que dado un dato por el usuario, este sea eliminado de la lista. Tome en cuenta que el usuario ingresará datos que se encuentran dentro de la lista
 
@@ -37,9 +27,12 @@ Ingrese el dato a eliminar: 60
 
 Salida: [15,20,50,80,40]
 """
-
+lista=[15,20,50,80,40,60]
+numero=int(input('Ingrese el dato a eliminar : '))
+lista.remove(numero)
+print(lista)
 """
-Ejercicio 5 *
+Ejercicio 5
 Dada una tupla de números (1,3,5,2,7,5,5,8,4,8,4,8,4), escriba un programa que dado un elemento por el usuario, imprima el número de veces que se encuentra en la tupla.
 
 Ejemplo:
@@ -50,7 +43,7 @@ Salida: 3
 """
 
 """
-Ejercicio 6 *
+Ejercicio 6
 Dado el diccionario que almacena la talla de algunas personas {'Marcelo': 1.80, 'José':1.50, 'Oscar':1.70, 'Jorge': 1.40}, escriba un programa que dado un nombre ingresado por el usuario imprime la talla.
 
 Ejemplo:
@@ -70,29 +63,16 @@ Ingrese una talla: 1.80
 
 Salida: Marcelo
 """
-def get_person_name( dicctionary, size):
-
-  keys = list(dicctionary.keys())
-  values = list(dicctionary.values())
-
-  if size in values:
-    index_size = values.index(size)
-    return keys[index_size]
-  
-  return "No se encontro la talla"
-
-
-people_data = {'Marcelo': 1.80, 'José':1.50, 'Oscar':1.70, 'Jorge': 1.40}
-
-size_input = float(input("Ingrese una talla a buscar: "))
-
-print(get_person_name(people_data, size_input))
 
 """
-Ejercicio 8 *
+Ejercicio 8
 Guarde los datos de una persona (nombre,apellido,edad) en un diccionario, luego imprimalo en el siguiente formato. "Hola mi nombre es [nombre] [apellido], y tengo [edad] años.
 """
-
+nombre=input('Ingrese nombre:')
+apellido=input('Ingrese apellido:')
+edad=input('Ingrese edad:')
+dic={'persona':[nombre,apellido,edad]}
+print(f'Hola mi nombre es ' + str(dic['persona'][0]) +' '+ str(dic['persona'][1]) +', y tengo '+ str(dic['persona'][2])+' años.')
 
 """
 """
