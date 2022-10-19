@@ -62,10 +62,6 @@ sum_diag(m)
 """
 Ejercicio 4: Dada la siguiente lista ["Hola", "Amigos", "Hoy", True] , escriba un programa que pida al usuario una palabra, dicha palabra debe ser agregada al final y al inicio de la lista.
 """
-def add_word(_list, text):
-  _list.insert(0, text)
-  _list.append(text)
-  return _list
 
 _list = ["Hola", "Amigos", "Hoy", True]
 
