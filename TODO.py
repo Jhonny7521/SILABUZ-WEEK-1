@@ -106,6 +106,18 @@ Ingrese el elemento a contar: 4
 
 Salida: 3
 """
+def contarNum(tupla, n):
+    cont = 0
+    for num in tupla:
+        if n == num:
+            cont += 1
+    return cont
+n = int(input("Ingrese el elemento a contar\n"))
+
+tupla_1 = (1,3,5,2,7,5,5,8,4,8,4,8,4)
+
+print(contarNum(tupla_1, n))
+
 
 """
 Ejercicio 6 *
