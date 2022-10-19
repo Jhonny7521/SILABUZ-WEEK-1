@@ -70,6 +70,14 @@ Ingrese una talla: 1.80
 
 Salida: Marcelo
 """
+# Forma rápida
+# def get_key(dict1, val):
+#     for key, value in dict1.items():
+#         if val == value:
+#             return key
+
+#     return "No existe este elemento"
+
 def get_person_name( dicctionary, size):
 
   keys = list(dicctionary.keys())
