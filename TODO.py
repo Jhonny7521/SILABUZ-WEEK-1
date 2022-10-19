@@ -74,17 +74,17 @@ Ingrese un nombre: Marcelo
 
 Salida: 1.80
 """
-def get_key(dict1, val):
+def get_key(dict1, key1):
     for key, value in dict1.items():
-        if val == value:
-            return key
+        if key1 == key:
+            return value
 
     return "No existe este elemento"
 
 
 
 dict1 = {'Marcelo': 1.80, 'José':1.50, 'Oscar':1.70, 'Jorge': 1.40}
-print(get_key(dict1,(float(input("Que talla te interesa? ")))))
+print(get_key(dict1,(input("Que nombre te interesa? "))))
 
 
 """
@@ -97,6 +97,18 @@ Ingrese una talla: 1.80
 
 Salida: Marcelo
 """
+
+def get_key(dict1, val):
+    for key, value in dict1.items():
+        if val == value:
+            return key
+
+    return "No existe este elemento"
+
+
+
+dict1 = {'Marcelo': 1.80, 'José':1.50, 'Oscar':1.70, 'Jorge': 1.40}
+print(get_key(dict1,(float(input("Que talla te interesa? ")))))
 
 """
 Ejercicio 8 *
