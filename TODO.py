@@ -62,6 +62,18 @@ Ingrese el dato a eliminar: 60
 Salida: [15,20,50,80,40]
 """
 
+def search_number(my_lsit):
+    if user_input in (my_list):
+        my_list.remove(user_input)
+        return my_list
+    else:
+        result = f"{user_input} No existe en la lista"
+        return result
+
+my_list = [15, 20, 50, 80, 40, 60]
+user_input = int(input('Ingrese un número de la lista: '))
+print(search_number(my_list))
+
 """
 Ejercicio 5 *
 Dada una tupla de números (1,3,5,2,7,5,5,8,4,8,4,8,4), escriba un programa que dado un elemento por el usuario, imprima el número de veces que se encuentra en la tupla.
