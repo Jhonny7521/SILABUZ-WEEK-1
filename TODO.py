@@ -27,10 +27,7 @@ Ingrese el dato a eliminar: 60
 
 Salida: [15,20,50,80,40]
 """
-lista=[15,20,50,80,40,60]
-numero=int(input('Ingrese el dato a eliminar : '))
-lista.remove(numero)
-print(lista)
+
 """
 Ejercicio 5
 Dada una tupla de números (1,3,5,2,7,5,5,8,4,8,4,8,4), escriba un programa que dado un elemento por el usuario, imprima el número de veces que se encuentra en la tupla.
