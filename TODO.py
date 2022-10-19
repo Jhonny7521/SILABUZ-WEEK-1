@@ -24,6 +24,28 @@ Ejercicio 2: Haga un programa en Python que le pida al usuario tantos enteros co
 el número de ocurrencias. Por ejemplo, si el usuario ingresa 4,4,8,4,9,7,7, la primera lista
 debe ser [4,8,9,7] y el segundo [3,1,1,2] 
 """
+def ejer2():
+	enteros= int(input("Ingrese la cantidad de números: "))
+	i=0
+	lista=[]
+	while i<enteros:
+		numero=int(input("Ingrese numero: "))
+		lista.append(numero)
+		i+=1
+	dic_numeros={}
+	for n in lista:
+		if n in dic_numeros:
+			dic_numeros[n]+=1
+		else:
+			dic_numeros[n]=1
+	print(lista)
+	ocurrencia=[]
+	propuestos=[]
+	propuestos.append(dic_numeros.keys())
+	ocurrencia.append(dic_numeros.values())
+	print("Los números propuestos son\n",propuestos)
+	print("La lista de ocurrencias de los números propuestos es\n",ocurrencia)
+ejer2()
 
 """ *
 Ejercicio 3: Dada la matriz, [[1,2,3],[4,5,6],[7,8,9]], calcule el promedio de la diagonal principal. Hint: Los 3 elementos de la diagonal son 1,5,9
