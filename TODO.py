@@ -140,7 +140,8 @@ def get_key(dict1, val):
 dict1 = {'Marcelo': 1.80, 'José':1.50, 'Oscar':1.70, 'Jorge': 1.40}
 print(get_key(dict1,(float(input("Que talla te interesa? ")))))
 
-"""
+
+""" *
 Ejercicio 7
 Dado el diccionario que almacena la talla de algunas personas {'Marcelo': 1.80, 'José':1.50, 'Oscar':1.70, 'Jorge': 1.40}, escriba un programa que dada una talla por el usuario imprima el nombre.
 
