@@ -62,6 +62,16 @@ sum_diag(m)
 """
 Ejercicio 4: Dada la siguiente lista ["Hola", "Amigos", "Hoy", True] , escriba un programa que pida al usuario una palabra, dicha palabra debe ser agregada al final y al inicio de la lista.
 """
+def add_word(_list, text):
+  _list.insert(0, text)
+  _list.append(text)
+  return _list
+
+_list = ["Hola", "Amigos", "Hoy", True]
+
+text_input = input("Ingrese una palabra: ")
+
+print(add_word(_list, text_input))
 
 """
 Ejercicio 4
@@ -142,6 +152,31 @@ Ingrese una talla: 1.80
 
 Salida: Marcelo
 """
+# Forma rápida
+# def get_key(dict1, val):
+#     for key, value in dict1.items():
+#         if val == value:
+#             return key
+
+#     return "No existe este elemento"
+
+def get_person_name( dicctionary, size):
+
+  keys = list(dicctionary.keys())
+  values = list(dicctionary.values())
+
+  if size in values:
+    index_size = values.index(size)
+    return keys[index_size]
+  
+  return "No se encontro la talla"
+
+
+people_data = {'Marcelo': 1.80, 'José':1.50, 'Oscar':1.70, 'Jorge': 1.40}
+
+size_input = float(input("Ingrese una talla a buscar: "))
+
+print(get_person_name(people_data, size_input))
 
 """
 Ejercicio 8
